@@ -1,0 +1,5 @@
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\bin\Debug\QMSAPIStarter.exe.config
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\bin\Debug\QMSAPIStarter.exe
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\bin\Debug\QMSAPIStarter.pdb
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\obj\x86\Debug\QMSAPIStarter.exe
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\obj\x86\Debug\QMSAPIStarter.pdb

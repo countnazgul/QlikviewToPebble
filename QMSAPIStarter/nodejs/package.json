@@ -1,0 +1,25 @@
+﻿{
+  "name": "QlikviewToPebble",
+  "version": "0.0.1",
+  "description": "A wrapper around the QIX Engine API for node",
+  "main": "server.js",
+  "author": {
+    "name": "Stefan Stoichev - stefan.stoichev@gmail.com"
+  },
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "4.12.3",
+	"body-parser": "1.12.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mindspank/qsocks.git"
+  },
+  "keywords": [
+    "qlikview", "pebble"
+  ],
+  "bugs": {
+    "url": "https://github.com/mindspank/qsocks/issues"
+  },
+  "homepage": "https://github.com/mindspank/qsocks"
+}

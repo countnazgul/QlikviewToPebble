@@ -1,0 +1,9 @@
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\bin\Debug\Newtonsoft.Json.pdb
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\bin\Debug\wearable-qv.exe.config
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\bin\Debug\wearable-qv.exe
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\bin\Debug\wearable-qv.pdb
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\obj\x86\Debug\wearable-qv.exe
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\obj\x86\Debug\wearable-qv.pdb
+D:\Projects\Personal\QMSAPIStarter\QMSAPIStarter\bin\Debug\CommandLine.dll

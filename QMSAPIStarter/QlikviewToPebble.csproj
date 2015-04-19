@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9899ECEF-DB83-4D0A-8540-082DF410B91B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QMSAPIStarter</RootNamespace>
+    <AssemblyName>QlikviewToPebble</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommandLine">
+      <HintPath>C:\Users\Home\Downloads\CommandLine\src\demo\bin\Release\CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\Home\Downloads\Net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsoleOptions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\QMSAPIService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceSupport\ServiceKeyBehaviorExtensionElement.cs" />
+    <Compile Include="ServiceSupport\ServiceKeyClientMessageInspector.cs" />
+    <Compile Include="ServiceSupport\ServiceKeyEndpointBehavior.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="nodejs\package.json" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.CALConfiguration.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.Category.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.DirectoryServiceObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.DocumentFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.DocumentMetaData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.DocumentNode.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.DocumentTask.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.DSProvider.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.DSResource.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.EDXStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.ExtensionUploadHandle.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.Field.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.FieldContent.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.License.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.QDSDocumentSession.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.QDSSettings.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.QVSMessage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.QVSSettings.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.QVWSAuthentication.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.Report.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.SectionAccessTable.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.ServerObject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.ServerObjectMetaData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.ServiceInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.ServiceStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.ServiceStatuseStatusFlag.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.TaskInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.TaskStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.TaskStatusNode.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.TriggerEDXTaskResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSAPIStarter.QMSAPIService.UserCALs.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QMSAPIService\QMSBackendService.wsdl" />
+    <None Include="Service References\QMSAPIService\Service11.xsd" />
+    <None Include="Service References\QMSAPIService\Service111.xsd" />
+    <None Include="Service References\QMSAPIService\Service1110.xsd" />
+    <None Include="Service References\QMSAPIService\Service112.xsd" />
+    <None Include="Service References\QMSAPIService\Service113.xsd" />
+    <None Include="Service References\QMSAPIService\Service114.xsd" />
+    <None Include="Service References\QMSAPIService\Service115.xsd" />
+    <None Include="Service References\QMSAPIService\Service116.xsd" />
+    <None Include="Service References\QMSAPIService\Service117.xsd" />
+    <None Include="Service References\QMSAPIService\Service118.xsd" />
+    <None Include="Service References\QMSAPIService\Service119.xsd" />
+    <None Include="Service References\QMSAPIService\Service2.wsdl" />
+    <None Include="Service References\QMSAPIService\Service21.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\QMSAPIService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\QMSAPIService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\QMSAPIService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\QMSAPIService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nodejs\server.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="nodejs\node_modules\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
