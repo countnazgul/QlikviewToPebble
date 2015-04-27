@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mindspank/qsocks.git"
+    "url": "https://github.com/countnazgul/QlikviewToPebble.git"
   },
   "keywords": [
     "qlikview", "pebble"
   ],
   "bugs": {
-    "url": "https://github.com/mindspank/qsocks/issues"
+    "url": "https://github.com/countnazgul/QlikviewToPebble/issues"
   },
-  "homepage": "https://github.com/mindspank/qsocks"
+  "homepage": "https://sstoichev.eu"
 }
